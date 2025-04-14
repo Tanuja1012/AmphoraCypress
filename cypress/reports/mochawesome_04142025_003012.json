@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-13T19:00:11.926Z",
+    "end": "2025-04-13T19:00:12.208Z",
+    "duration": 282,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d8418504-8f3a-4b0b-b030-a29364b21854",
+      "title": "",
+      "fullFile": "cypress\\e2e\\API\\Petcrud.feature",
+      "file": "cypress\\e2e\\API\\Petcrud.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 220,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\API\\\\Petcrud.feature\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\API\\\\Petcrud.feature\\\\An uncaught error was detected outside of a test (failed).png\"\n      ]\n    ]\n  }\n]",
+          "code": "throw err;",
+          "err": {
+            "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > ProductPage is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > ProductPage is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at cypress/pageObjects/productPage.js (https://amphora.net/__cypress/tests?p=cypress\\e2e\\API\\Petcrud.feature:14080:7)\n    at __init (https://amphora.net/__cypress/tests?p=cypress\\e2e\\API\\Petcrud.feature:9:58)\n    at cypress/support/step_definitions/product.steps.js (https://amphora.net/__cypress/tests?p=cypress\\e2e\\API\\Petcrud.feature:14091:7)\n    at __init (https://amphora.net/__cypress/tests?p=cypress\\e2e\\API\\Petcrud.feature:9:58)\n    at eval (https://amphora.net/__cypress/tests?p=cypress\\e2e\\API\\Petcrud.feature:14251:3)\n    at eval (https://amphora.net/__cypress/tests?p=cypress\\e2e\\API\\Petcrud.feature:14255:3)\n    at eval (<anonymous>)\n    at <unknown> (https://amphora.net/__cypress/runner/cypress_runner.js:111981:23)\n    at tryCatcher (https://amphora.net/__cypress/runner/cypress_runner.js:1777:23)\n    at Object.gotValue (https://amphora.net/__cypress/runner/cypress_runner.js:6446:18)",
+            "diff": null
+          },
+          "uuid": "feac00f0-1ff3-4db9-adea-74a852005f41",
+          "parentUUID": "d8418504-8f3a-4b0b-b030-a29364b21854",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "feac00f0-1ff3-4db9-adea-74a852005f41"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 220,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

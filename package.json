@@ -1,0 +1,36 @@
+{
+  "name": "amphoracypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "clean:reports": "rimraf \"cypress/reports/*.json\"",
+    "merge:report": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json",
+    "generate:report": "npx marge cypress/reports/merged-report.json --reportDir cypress/reports/mochawesome-report --reportFilename mochawesome.html",
+    "open:report": "npx open-cli cypress/reports/mochawesome-report/mochawesome.html",
+    "test:report": "npm run test && npm run merge:report && npm run generate:report && npm run open:report"
+    
+
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^14.3.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "esbuild": "^0.17.19",
+    "open": "^10.1.0"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "open-cli": "^8.0.0"
+  }
+  
+}
+
+

@@ -1,0 +1,50 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Amphora Website UI Testing",
+    "line": 1,
+    "id": "amphora-website-ui-testing",
+    "tags": [],
+    "uri": "product.feature",
+    "elements": [
+      {
+        "id": "amphora-website-ui-testing;products-dropdown",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Products DropDown",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "OpenHomepage",
+            "result": {
+              "status": "undefined",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ClickonProduts",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Respectiveproductpageisloaded",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
