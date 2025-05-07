@@ -28,6 +28,7 @@ Then('the message "Thank you for signing up for our newsletter" should be visibl
    
  cy.get('.fs-notifier.success').find('>span').contains('Thank you for signing up for our newsletter. We are thrilled to have you join our community. Every quarter, you will receive exclusive content designed to keep you informed about generic topics within the CTRM industry.').should('be.visible');
  //cy.get('#newsletter-sign-up').find('>a').contains('Close').should('be.visible').click({ force: true });
+ 
 
 });
     

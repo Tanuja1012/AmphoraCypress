@@ -3,7 +3,8 @@ class newsletterPage
     signUpNewsletter(){
         cy.get('.page-header__hamburger').find('>span').contains('MENU').click({ force: true });
         cy.wait(2000);
-        cy.get('.cky-consent-container.cky-banner-bottom').find('>div>div>div>div>button').contains('Accept All').should('be.visible').click();
+        cy.get("a").contains('Products').should('be.visible').click();
+       // cy.get('.cky-consent-container.cky-banner-bottom').find('>div>div>div>div>button').contains('Accept All').should('be.visible').click();
         //cy.contains('Accept All').should('be.visible').click();
         
        cy.get("nav").find('>div>ul>li>ul').last().invoke('show');
